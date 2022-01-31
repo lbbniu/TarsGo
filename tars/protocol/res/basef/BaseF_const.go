@@ -7,6 +7,7 @@ package basef
 const (
 	TARSVERSION             int16 = 0x01
 	TUPVERSION              int16 = 0x03
+	XMLVERSION              int16 = 0x04
 	JSONVERSION             int16 = 0x05
 	TARSNORMAL              int8  = 0x00
 	TARSONEWAY              int8  = 0x01
@@ -24,6 +25,7 @@ const (
 	TARSADAPTERNULL         int32 = -10
 	TARSINVOKEBYINVALIDESET int32 = -11
 	TARSCLIENTDECODEERR     int32 = -12
+	TARSSENDREQUESTERR      int32 = -13
 	TARSSERVERUNKNOWNERR    int32 = -99
 	TARSMESSAGETYPENULL     int32 = 0x00
 	TARSMESSAGETYPEHASH     int32 = 0x01
@@ -32,4 +34,5 @@ const (
 	TARSMESSAGETYPESAMPLE   int32 = 0x08
 	TARSMESSAGETYPEASYNC    int32 = 0x10
 	TARSMESSAGETYPESETNAME  int32 = 0x80
+	TARSMESSAGETYPETRACE    int32 = 0x100
 )
